@@ -1,0 +1,60 @@
+{
+  "name": "cloakkit",
+  "version": "0.1.0",
+  "description": "A tiny, zero-dependency library that detects and redacts secrets and PII in text locally before sending to an AI.",
+  "license": "MIT",
+  "author": "CloakKit Contributors",
+  "homepage": "https://github.com/ABDULLAH-G-1/open-source-secret-scanner#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ABDULLAH-G-1/open-source-secret-scanner.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ABDULLAH-G-1/open-source-secret-scanner/issues"
+  },
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "bin": {
+    "cloakkit": "./bin/cloakkit.cjs"
+  },
+  "files": [
+    "dist",
+    "bin",
+    "README.md",
+    "LICENSE"
+  ],
+  "sideEffects": false,
+  "keywords": [
+    "secrets",
+    "redact",
+    "pii",
+    "security",
+    "scanner",
+    "privacy",
+    "zero-dependency",
+    "llm",
+    "ai",
+    "prompts",
+    "credentials",
+    "cli"
+  ],
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch"
+  },
+  "devDependencies": {
+    "tsup": "^8.2.4",
+    "typescript": "^5.5.4"
+  }
+}

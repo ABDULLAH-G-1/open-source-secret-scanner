@@ -1,0 +1,31 @@
+name: False Positive Report
+description: Report non-sensitive text incorrectly flagged as a secret or PII
+title: "[False Positive]: "
+labels: ["bug", "false-positive"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for reporting a false positive! Please ensure you do NOT share any real credentials or sensitive personal information in this issue.
+  - type: input
+    id: rule_id
+    attributes:
+      label: Which rule was triggered?
+      description: The ID of the rule (e.g. `generic-secret-key-value`, `google-api-key`, `pii-phone`).
+      placeholder: "e.g. generic-secret-key-value"
+    validations:
+      required: true
+  - type: textarea
+    id: sample_input
+    attributes:
+      label: Non-sensitive sample text
+      description: Provide an anonymized example that triggers the false positive.
+      placeholder: |
+        const timeout_seconds = "12345678";
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: Additional Context
+      description: Why is this text safe and what pattern caused the misclassification?

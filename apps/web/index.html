@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CloakKit - Detect & Redact Secrets & PII for AI Prompts</title>
+    
+    <!-- Your text never leaves your browser. The page makes no network requests after it loads. -->
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'none'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; connect-src 'none'; form-action 'none'; base-uri 'none';"
+    />
+    
+    <!-- SEO & Metadata -->
+    <meta
+      name="description"
+      content="Detect and redact API keys, credentials, and PII locally before sending text to AI. Your text never leaves your browser. The page makes no network requests after it loads."
+    />
+    <link rel="canonical" href="%SITE_URL%/" />
+
+    <!-- Open Graph / Social -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="CloakKit" />
+    <meta property="og:url" content="%SITE_URL%/" />
+    <meta property="og:title" content="CloakKit - Zero-Dependency Secret & PII Redactor" />
+    <meta
+      property="og:description"
+      content="Detect and redact API keys, credentials, and PII locally before sending text to AI. Your text never leaves your browser. The page makes no network requests after it loads."
+    />
+    <meta property="og:image" content="%SITE_URL%/og.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="CloakKit - Zero-Dependency Secret & PII Redactor" />
+    <meta
+      name="twitter:description"
+      content="Detect and redact API keys, credentials, and PII locally before sending text to AI. Your text never leaves your browser. The page makes no network requests after it loads."
+    />
+    <meta name="twitter:image" content="%SITE_URL%/og.png" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  </head>
+  <body class="bg-slate-50 text-slate-900 dark:bg-slate-950 dark:text-slate-100 antialiased min-h-screen selection:bg-emerald-500/20 selection:text-emerald-700 dark:selection:text-emerald-300">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

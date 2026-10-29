@@ -1,0 +1,23 @@
+{
+  "name": "cloakkit-monorepo",
+  "private": true,
+  "workspaces": [
+    "packages/*",
+    "apps/*"
+  ],
+  "scripts": {
+    "build:core": "npm run build --workspace=cloakkit",
+    "build:web": "npm run build --workspace=@cloakkit/web",
+    "build": "npm run build:core && npm run build:web",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "generate:rules": "node scripts/generate-rules-table.mjs",
+    "og": "node scripts/generate-og.mjs"
+  },
+  "devDependencies": {
+    "@resvg/resvg-js": "^2.6.2",
+    "@types/node": "^22.5.0",
+    "typescript": "^5.5.4",
+    "vitest": "^2.1.1"
+  }
+}

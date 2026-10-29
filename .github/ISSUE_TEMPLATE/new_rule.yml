@@ -1,0 +1,32 @@
+name: New Rule Request
+description: Propose a new detection rule or PII pattern for CloakKit
+title: "[New Rule]: "
+labels: ["enhancement", "rules"]
+body:
+  - type: input
+    id: rule_name
+    attributes:
+      label: Proposed Rule Name
+      description: What credential, token, or identifier should this rule target?
+      placeholder: "e.g. Supabase Service Role Key"
+    validations:
+      required: true
+  - type: input
+    id: docs
+    attributes:
+      label: Documentation / Specification Link
+      description: Link to provider documentation or public RFC standard.
+      placeholder: "https://supabase.com/docs/guides/api#api-keys"
+    validations:
+      required: true
+  - type: textarea
+    id: pattern_details
+    attributes:
+      label: Pattern Specifications
+      description: What is the known prefix, character set, length, or checksum algorithm?
+      placeholder: |
+        - Prefix: sb_secret_
+        - Length: 40 characters
+        - Character set: [a-zA-Z0-9_-]
+    validations:
+      required: true
