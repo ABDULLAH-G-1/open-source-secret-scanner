@@ -131,7 +131,7 @@ vite v5.4.21 building for production...
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 ⚠️  WARNING: SITE_URL in apps/web/src/constants/site.ts contains "TODO"
-   Current value: https://TODO.vercel.app
+   Current value: https://cloakkit-app.vercel.app/
    Update this with your real production domain before launch.
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
