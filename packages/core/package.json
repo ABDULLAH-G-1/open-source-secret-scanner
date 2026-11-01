@@ -1,6 +1,6 @@
 {
   "name": "cloakkit",
-  "version": "0.1.0",
+  "version": "0.1.2",
   "description": "A tiny, zero-dependency library that detects and redacts secrets and PII in text locally before sending to an AI.",
   "license": "MIT",
   "author": "CloakKit Contributors",
