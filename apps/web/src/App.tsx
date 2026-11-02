@@ -1,3 +1,4 @@
+import { Analytics } from '@vercel/analytics/react';
 import React, { useState, useMemo, useEffect } from 'react';
 import { scan, redact, Finding } from 'cloakkit';
 import { generateSampleText } from './sample';
@@ -480,6 +481,7 @@ export default function App() {
           </p>
         </div>
       </footer>
+      <Analytics/>
     </div>
   );
 }
